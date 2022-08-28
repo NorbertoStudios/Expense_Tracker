@@ -1,0 +1,8 @@
+{
+  "prettierConfig": {
+    "singleQuote": true,
+    "semi": false
+  },
+  "dir": "components",
+  "extension": "jsx"
+}
