@@ -4,7 +4,7 @@ import Nav from '../Nav';
 function Dashboard() {
   return (
     <>
-    <Nav/>
+    Hellow
     </>
   )
 }
