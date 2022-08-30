@@ -25,7 +25,7 @@ console.log(current_total)
       {/* <h1 className="pt-4 pb-2 flex justify-center space-x-4 font-bold ">
       
       </h1> */}
-      {/* <div className="flex justify-between items-center pb-4 bg-white dark:bg-gray-900">
+      <div className="flex justify-between items-center pb-4 bg-white dark:bg-gray-900">
         <label htmlFor="table-search" className="sr-only">
           Search
         </label>
@@ -53,9 +53,9 @@ console.log(current_total)
             placeholder="Search for users"
           />
         </div>
-      </div> */}
+      </div>
       <div className="m-4  overflow-auto sm:rounded-lg shadow-md ">
-        <table className=" w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <table className=" w-full text-sm text-left text-gray-400">
           <TableHead />
           <TableBody />
           <tfoot>
@@ -63,7 +63,7 @@ console.log(current_total)
               <td></td>
               <td></td>
               <td></td>
-              <th scope="row" className="py-3 px-6 text-base">Total Expenses</th>
+              <th scope="row" className="py-3 px-6 text-base text-gray-300">Total Expenses</th>
               <td className={`py-3 px-6 ${Math.sign(current_total) === 1 ? "text-green-300" : "text-red-300"}`}>${current_total.toFixed(2)}</td>
             </tr>
           </tfoot>

@@ -3,7 +3,7 @@ import { tableTitles } from '../../../constant/table-constant'
 
 function TableHead() {
   return (
-    <thead className="sticky top-0 z-10 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    <thead className="sticky top-0 z-10 text-xs uppercase bg-gray-700 text-gray-400">
       <tr>
         {tableTitles.map((title, i) => (
           <th
