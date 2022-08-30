@@ -1,21 +1,18 @@
 import React from 'react'
+import { tableTitles } from '../../../constant/table-constant'
 
 function TableHead() {
   return (
-    <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    <thead className="sticky top-0 z-10 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
       <tr>
-        <th scope="col" className="p-4">
-          #
-        </th>
-        <th scope="col" className="py-3 px-6">
-          Transactions
-        </th>
-        <th scope="col" className="py-3 px-6">
-          Category
-        </th>
-        <th scope="col" className="py-3 px-6">
-          Amount
-        </th>
+        {tableTitles.map((title, i) => (
+          <th
+          key={title} 
+          scope="col" 
+          className={i === 0 ? "p-4" : "py-3 px-6"}>
+            {title}
+          </th>
+        ))}
       </tr>
     </thead>
   )
