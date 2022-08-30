@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image'
+import TableHead from './TableHead/TableHead';
 
 function Table() {
   return (
     <>
-      <h1 className="flex justify-center space-x-4 font-bold">
+      <h1 className="flex justify-center space-x-4 font-bold pb-10">
         Expense Tracker
       </h1>
 
@@ -38,22 +40,7 @@ function Table() {
             </div>
           </div> */}
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-              <th scope="col" className="p-4">
-                #
-              </th>
-              <th scope="col" className="py-3 px-6">
-                Transactions
-              </th>
-              <th scope="col" className="py-3 px-6">
-                Category
-              </th>
-              <th scope="col" className="py-3 px-6">
-                Amount
-              </th>
-            </tr>
-          </thead>
+         <TableHead/>
           <tbody>
             <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
               <td className="p-4 w-4">0</td>
@@ -61,8 +48,10 @@ function Table() {
                 scope="row"
                 className="flex items-center py-4 px-6 text-gray-900 whitespace-nowrap dark:text-white"
               >
-                <img
-                  className="w-10 h-10 rounded-full"
+                <Image 
+                  // className="w-10 h-10 rounded-full"
+                  width={40} 
+                  height={40}
                   src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
                   alt="Jese image"
                 />
