@@ -24,16 +24,17 @@ const TableRow = () => {
             />
             <div className="pl-3">
               <div className="text-base font-semibold text-gray-300">{item.name}</div>
-              {/* <div className="font-normal text-gray-500">
-                      neil.sims@flowbite.com
-                    </div> */}
+              <div className="font-normal text-gray-500">
+                      description
+                    </div>
             </div>
           </th>
+          <td className="py-4 px-6">{item.date}</td>
           <td className="py-4 px-6">{item.category}</td>
           <td className="py-4 px-6">
             <div className="flex items-center">
                 <div className={`h-2.5 w-2.5 rounded-full ${item.amountSign.name === "+" ? "bg-green-400" : "bg-red-400"}  mr-2`}></div>
-              ${item.amount}
+              ${item.amount.toLocaleString()}
             </div>
           </td>
 

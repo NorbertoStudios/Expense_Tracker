@@ -1,4 +1,4 @@
-export const tableTitles = ["#", "transations", "category", "amount"];
+export const tableTitles = ["#", "transations", "Date","category", "amount", ];
 export const amountSign = { plus: { name: "+" }, minus: { name: "-" } };
 export const category = {
   food: {
@@ -35,8 +35,9 @@ export const tableItemsMock = [
     },
     id: "0",
     name: "Walmart",
+    date:new Date().toLocaleDateString(),
     category: category.food.name,
-    amount: "30.13",
+    amount: 30.13,
     amountSign: amountSign.minus,
   },
   {
@@ -46,8 +47,9 @@ export const tableItemsMock = [
     },
     id: "1",
     name: "Home Depot",
+    date:new Date().toLocaleDateString(),
     category: category.home_improvement.name,
-    amount: "650.45",
+    amount: 650.45,
     amountSign: amountSign.minus,
   },
   {
@@ -57,8 +59,9 @@ export const tableItemsMock = [
     },
     id: "2",
     name: "Paycheck",
+    date:new Date().toLocaleDateString(),
     category: category.deposit.name,
-    amount: "1,050.45",
+    amount: 1050.45,
     amountSign: amountSign.plus,
   },
   {
@@ -68,8 +71,9 @@ export const tableItemsMock = [
     },
     id: "3",
     name: "Gas",
+    date:new Date().toLocaleDateString(),
     category: category.gas.name,
-    amount: "50.25",
+    amount: 50.25,
     amountSign: amountSign.minus,
   },
   {
@@ -78,9 +82,22 @@ export const tableItemsMock = [
       alt: "Jese image",
     },
     id: "4",
-    name: "Lowes",
-    category: category.home_improvement.name,
-    amount: "350.45",
+    name: "Check",
+    date:new Date().toLocaleDateString(),
+    category: category.deposit.name,
+    amount: 350.45,
+    amountSign: amountSign.plus,
+  },
+  {
+    image: {
+      src: "https://mdbcdn.b-cdn.net/img/new/avatars/6.webp",
+      alt: "Jese image",
+    },
+    id: "5",
+    name: "Apple Music",
+    date:new Date().toLocaleDateString(),
+    category: category.subcription.name,
+    amount: 20.95,
     amountSign: amountSign.minus,
   },
   {
@@ -90,8 +107,9 @@ export const tableItemsMock = [
     },
     id: "5",
     name: "Apple Music",
+    date:new Date().toLocaleDateString(),
     category: category.subcription.name,
-    amount: "20.95",
+    amount: 20.95,
     amountSign: amountSign.minus,
   },
   {
@@ -101,8 +119,9 @@ export const tableItemsMock = [
     },
     id: "5",
     name: "Apple Music",
+    date:new Date().toLocaleDateString(),
     category: category.subcription.name,
-    amount: "20.95",
+    amount: 20.95,
     amountSign: amountSign.minus,
   },
   {
@@ -112,8 +131,9 @@ export const tableItemsMock = [
     },
     id: "5",
     name: "Apple Music",
+    date: new Date().toLocaleDateString(),
     category: category.subcription.name,
-    amount: "20.95",
+    amount: 20.95,
     amountSign: amountSign.minus,
   },
   {
@@ -123,8 +143,9 @@ export const tableItemsMock = [
     },
     id: "5",
     name: "Apple Music",
+    date: new Date().toLocaleDateString(),
     category: category.subcription.name,
-    amount: "20.95",
+    amount: 20.95,
     amountSign: amountSign.minus,
   },
   {
@@ -134,19 +155,9 @@ export const tableItemsMock = [
     },
     id: "5",
     name: "Apple Music",
+    date:new Date().toLocaleDateString(),
     category: category.subcription.name,
-    amount: "20.95",
-    amountSign: amountSign.minus,
-  },
-  {
-    image: {
-      src: "https://mdbcdn.b-cdn.net/img/new/avatars/6.webp",
-      alt: "Jese image",
-    },
-    id: "5",
-    name: "Apple Music",
-    category: category.subcription.name,
-    amount: "20.95",
+    amount: 20.95,
     amountSign: amountSign.minus,
   },
 ];

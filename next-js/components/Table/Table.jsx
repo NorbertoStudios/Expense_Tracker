@@ -2,7 +2,24 @@ import React from 'react';
 import TableHead from './TableHead/TableHead';
 import TableBody from './TableBody';
 
+import { tableItemsMock } from '../../constant/table-constant';
+
 function Table() {
+
+  let current_total = 0.0;
+  tableItemsMock.forEach((item) => { 
+    if (item.amountSign.name === '+') 
+    {current_total += item.amount
+    console.log(current_total);
+    } 
+    else {current_total -= item.amount
+      console.log(current_total);
+}
+return current_total
+
+})
+console.log(current_total)
+
   return (
     <>
       {/* <h1 className="pt-4 pb-2 flex justify-center space-x-4 font-bold ">
@@ -41,9 +58,18 @@ function Table() {
         <table className=" w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <TableHead />
           <TableBody />
+          <tfoot>
+            <tr className="font-semibold ">
+              <td></td>
+              <td></td>
+              <td></td>
+              <th scope="row" className="py-3 px-6 text-base">Total Expenses</th>
+              <td className={`py-3 px-6 ${Math.sign(current_total) === 1 ? "text-green-300" : "text-red-300"}`}>${current_total.toFixed(2)}</td>
+            </tr>
+          </tfoot>
         </table>
 
-
+        {/* "bg-green-400" : "bg-red-400" */}
 
       </div>
 
