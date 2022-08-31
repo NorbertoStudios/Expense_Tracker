@@ -2,7 +2,7 @@ import React from 'react';
 import TableHead from './TableHead/TableHead';
 import TableBody from './TableBody';
 
-import { tableItemsMock } from '../../constant/table-constant';
+import { tableItemsMock, title } from '../../constant/table-constant';
 
 function Table() {
 
@@ -22,10 +22,10 @@ console.log(current_total)
 
   return (
     <>
-      {/* <h1 className="pt-4 pb-2 flex justify-center space-x-4 font-bold ">
-      
-      </h1> */}
-      <div className="flex justify-between items-center pb-4 bg-white dark:bg-gray-900">
+      <h1 className="pt-4 pb-2 flex justify-center space-x-4 font-bold ">
+      Transations
+      </h1>
+      {/* <div className="flex justify-between items-center pb-4 bg-white dark:bg-gray-900">
         <label htmlFor="table-search" className="sr-only">
           Search
         </label>
@@ -53,7 +53,7 @@ console.log(current_total)
             placeholder="Search for users"
           />
         </div>
-      </div>
+      </div> */}
       <div className="m-4  overflow-auto sm:rounded-lg shadow-md ">
         <table className=" w-full text-sm text-left text-gray-400">
           <TableHead />

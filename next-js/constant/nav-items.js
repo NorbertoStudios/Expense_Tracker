@@ -34,15 +34,16 @@ export const navItems = [
     hRef: "insights",
   },
   {
+    name: "Budget",
+    icon: <BiDollar size={navIconSize} />,
+    hRef: "budget",
+  },
+  {
     name: "Pay Off",
     icon: <BiCoinStack size={navIconSize} />,
     hRef: "pay-off",
   },
-  {
-    name: "Budget",
-    icon: <BiDollar size={navIconSize} />,
-    hRef: "bidget",
-  },
+
 ];
 
 export const navItemSetting = {
