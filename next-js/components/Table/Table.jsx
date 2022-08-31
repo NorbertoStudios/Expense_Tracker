@@ -7,18 +7,18 @@ import { tableItemsMock, title } from '../../constant/table-constant';
 function Table() {
 
   let current_total = 0.0;
-  tableItemsMock.forEach((item) => { 
-    if (item.amountSign.name === '+') 
-    {current_total += item.amount
-    console.log(current_total);
-    } 
-    else {current_total -= item.amount
-      console.log(current_total);
-}
-return current_total
+//   tableItemsMock.forEach((item) => { 
+//     if (item.amountSign.name === '+') 
+//     {current_total += item.amount
+//     console.log(current_total);
+//     } 
+//     else {current_total -= item.amount
+//       console.log(current_total);
+// }
+// return current_total
 
-})
-console.log(current_total)
+// })
+// console.log(current_total)
 
   return (
     <>

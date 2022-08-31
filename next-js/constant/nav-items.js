@@ -41,7 +41,7 @@ export const navItems = [
   {
     name: "Pay Off",
     icon: <BiCoinStack size={navIconSize} />,
-    hRef: "pay-off",
+    hRef: "payoff",
   },
 
 ];
