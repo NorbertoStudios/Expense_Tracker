@@ -25,6 +25,10 @@ export const category = {
     id: 5,
     name: "Subcription",
   },
+  credit_card: {
+    id: 6,
+    name: "Credit Card",
+  },
 };
 
 export const tableItemsMock = [

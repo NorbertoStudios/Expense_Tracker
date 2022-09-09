@@ -5,7 +5,7 @@ import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="flex">
+    <div className="flex bg-gray-900">
       <Head>
         <title>Expense Tracker</title>
         <meta name="description" content="Norberto Studios" />

@@ -1,10 +1,17 @@
 import React from "react";
 import Table from "../components/Table";
+import { tableTitles, tableItemsMock } from "../constant/table-constant";
 
 const transations = () => {
+
+
   return (
     <div className="flex flex-col w-full h-screen bg-gray-700 text-gray-300">
-      <Table />
+      <Table 
+      tableTitles={tableTitles}
+      tableRow = {tableItemsMock}
+      type="transations"
+      />
       <div className="px-4 flex  justify-center">
         {/* <!-- Previous Button --> */}
         <a

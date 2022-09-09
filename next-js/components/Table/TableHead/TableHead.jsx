@@ -1,7 +1,6 @@
 import React from 'react'
-import { tableTitles } from '../../../constant/table-constant'
 
-function TableHead() {
+function TableHead({tableTitles}) {
   return (
     <thead className="sticky top-0 z-10 text-xs uppercase bg-gray-700 text-gray-400">
       <tr>

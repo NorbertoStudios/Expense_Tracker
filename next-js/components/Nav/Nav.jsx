@@ -48,6 +48,7 @@ function Nav() {
 
           </div>
         </div>
+
         <div className="flex flex-col px-2 items-center w-full mt-2 border-t border-gray-700">
           <NavBtn
             name={navItemSetting.name}
