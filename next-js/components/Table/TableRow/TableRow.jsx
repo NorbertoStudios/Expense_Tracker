@@ -54,10 +54,6 @@ export const TableTransation = ({ tableItems }) => {
 };
 
 export const TablePayoff = ({ tableItems }) => {
-  const reformatDate = (date) => {
-    return new Date(date).toISOString().split("T")[0];
-  };
-
   return (
     <>
       {tableItems.map((item, i) => (
@@ -101,7 +97,44 @@ export const TablePayoff = ({ tableItems }) => {
           <td className="py-4 px-6">${item.currentBalance.toLocaleString()}</td>
           <td className="py-4 px-6">{item.rate}%</td>
           <td className="py-4 px-6">${item.minimumPayment}</td>
-          <td className="py-4 px-2">{moment(item.dueDate).format("L")}</td>
+          <td className="py-4 px-2">{item.dueDate}</td>
+          <td className="py-4 px-6">
+            <a
+              href="#"
+              type="button"
+              className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            >
+              Edit
+            </a>
+          </td>
+        </tr>
+      ))}
+    </>
+  );
+};
+
+export const TablePayoffSnowball = ({ tableItems }) => {
+  return (
+    <>
+      {tableItems.map(({ name, currentBalance, apr, payoffDate, totalRate, minimumPayment, dueDate }, i) => (
+        <tr
+          key={i}
+          className="border-b bg-gray-800 border-gray-700 hover:bg-gray-600"
+        >
+          {/* <td className="p-4 w-4">{name}</td> */}
+
+          <th
+            scope="row"
+            className="flex items-center py-4 px-6 whitespace-nowrap text-white"
+          >
+            <div className="text-base font-semibold text-gray-300">{name}</div>
+          </th>
+          <td className="py-4 px-6">${currentBalance.toLocaleString()}</td>
+          <td className="py-4 px-6">{apr}%</td> 
+          <td className="py-4 px-6">${totalRate.toLocaleString()}</td> 
+          <td className="py-4 px-6">{payoffDate}</td> 
+          <td className="py-4 px-6">${minimumPayment.toLocaleString()}</td> 
+          <td className="py-4 px-6">{dueDate}</td> 
           <td className="py-4 px-6">
             <a
               href="#"

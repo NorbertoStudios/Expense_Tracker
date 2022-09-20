@@ -16,7 +16,7 @@ export const navItems = [
   {
     name: "Search",
     icon: <BiSearchAlt size={navIconSize} />,
-    hRef: "search",
+    hRef: "/search",
   },
   {
     name: "Dashboard",
@@ -26,22 +26,22 @@ export const navItems = [
   {
     name: "Transations",
     icon: <BiTransferAlt size={navIconSize} />,
-    hRef: "transations",
+    hRef: "/transations",
   },
   {
     name: "Insights",
     icon: <BiBarChart size={navIconSize} />,
-    hRef: "insights",
+    hRef: "/insights",
   },
   {
     name: "Budget",
     icon: <BiDollar size={navIconSize} />,
-    hRef: "budget",
+    hRef: "/budget",
   },
   {
     name: "Pay Off",
     icon: <BiCoinStack size={navIconSize} />,
-    hRef: "payoff",
+    hRef: "/payoff",
   },
 
 ];
@@ -49,7 +49,7 @@ export const navItems = [
 export const navItemSetting = {
     name: "Settings",
     icon: <BiSliderAlt size={navIconSize} />,
-    hRef: "settings",
+    hRef: "/settings",
   }
 
 export const navItemProfile = {
